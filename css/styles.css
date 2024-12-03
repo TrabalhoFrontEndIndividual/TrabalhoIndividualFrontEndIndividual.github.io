@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  padding: 1em 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+/* Contêiner da galeria de imagens */
+.image-gallery {
+  display: flex; /* Organiza as imagens em linha */
+  flex-wrap: wrap; /* Permite que imagens ocupem várias linhas se necessário */
+  justify-content: center; /* Centraliza as imagens */
+  gap: 16px; /* Espaçamento entre as imagens */
+  margin: 20px; /* Margem ao redor do contêiner */
+}
+
+/* Estilo para as imagens da galeria */
+.gallery-image {
+  width: 300px; /* Largura fixa das imagens */
+  height: auto; /* Mantém a proporção das imagens */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para as imagens */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação suave */
+}
+
+/* Efeito ao passar o mouse */
+.gallery-image:hover {
+  transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Intensifica a sombra */
+}
+
+/* Define o contêiner centralizado */
+.iframe-container {
+  display: flex; /* Usa Flexbox para alinhar elementos */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh; /* Altura de 100% da viewport */
+  margin: 0; /* Remove margens do contêiner */
+  background-color: #f9f9f9; /* Fundo opcional */
+}
+
+/* Estilização opcional para o iframe */
+iframe {
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
